@@ -77,8 +77,8 @@ export default function Articles() {
 
   return (
     <div className="wrapperArticles">
-      {articles.map((article) => (
-        <div className="wrapper">
+      {articles.map((article, key) => (
+        <div className="wrapper" key={key}>
           {article.image}
           <h1 className="title">{article.title}</h1>
           <div className="description">{article.description}</div>
